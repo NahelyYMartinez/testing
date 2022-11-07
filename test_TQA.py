@@ -18,13 +18,13 @@ class HelloWorld(unittest.TestCase):
         driver = self.driver
         driver.get("https://www.saucedemo.com/")
         driver.maximize_window()
-        sleep(3)
+        sleep(2)
         usuario = driver.find_element(By.ID, "user-name")
         usuario.send_keys("standard_user")
-        sleep(3)
+        sleep(2)
         password = driver.find_element(By.ID, "password")
         password.send_keys("secret_sauce")
-        sleep(3)
+        sleep(2)
         button = driver.find_element(By.ID, "login-button")
         button.click()
 
